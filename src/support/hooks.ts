@@ -6,7 +6,7 @@ let browser: Browser;
 class CustomWorld extends World {
   page: Page;
   context: BrowserContext;
-  URL: string = 'https://bootcampqa.com'; //Poner la pagina cuando la tenga para probarla
+  URL: string = 'https://www.zara.com/es/'; //Poner la pagina cuando la tenga para probarla
 
   constructor(options: any) {
     super(options);
@@ -20,7 +20,7 @@ setDefaultTimeout(20000); //Tiempo maximo de espera en milisegundos. 20.000 equi
 
 Before(async function() {
   // Launch browser in headless mode
-  browser = await chromium.launch({ headless: true }); //para probarlo tiene que poner false, pero para subirlo tiene que estar true
+  browser = await chromium.launch({ headless: false }); //para probarlo tiene que poner false, pero para subirlo tiene que estar true
 
   // Define viewport size based on the environment variable VIEWPORT
   let device = {};
