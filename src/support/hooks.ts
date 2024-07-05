@@ -6,7 +6,7 @@ let browser: Browser;
 class CustomWorld extends World {
   page: Page;
   context: BrowserContext;
-  URL: string = 'https://www.zara.com/es/'; //Poner la pagina cuando la tenga para probarla
+  URL: string = 'https://www.saucedemo.com/'; //Poner la pagina cuando la tenga para probarla
 
   constructor(options: any) {
     super(options);
@@ -16,11 +16,11 @@ class CustomWorld extends World {
 }
 
 setWorldConstructor(CustomWorld);
-setDefaultTimeout(20000); //Tiempo maximo de espera en milisegundos. 20.000 equivale a 20 segundos.
+setDefaultTimeout(60000); //Tiempo maximo de espera en milisegundos. 20.000 equivale a 20 segundos.
 
 Before(async function() {
   // Launch browser in headless mode
-  browser = await chromium.launch({ headless: true }); //para probarlo tiene que poner false, pero para subirlo tiene que estar true
+  browser = await chromium.launch({ headless: false }); //para probarlo tiene que poner false, pero para subirlo tiene que estar true
 
   // Define viewport size based on the environment variable VIEWPORT
   let device = {};

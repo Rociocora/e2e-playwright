@@ -1,13 +1,12 @@
-Feature: Login Zara
+Feature: Login Saucedemo
 
  Background:
-    Given the user is on zara login page
+    Given the user is on saucedemo login page
 
   Scenario: login with invalid username and password
-     When the user fill email with "rociocora7@gmail.com"
-     And the user fill password with "todoslosmeses7"
+     When the user fill username with "visual_user"
+     And the user fill password with "secret_sauce"
      And the user press login button
-     Then the user should see error message "La combinación de usuario y contraseña no se corresponden con ninguna cuenta en Zara.com."
-
+     Then the user should see products page
 
   
