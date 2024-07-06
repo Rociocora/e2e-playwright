@@ -24,7 +24,7 @@ Then('the user should see products page',async function () {
     await expect(this.page.locator('[data-test="title"]')).toBeVisible();
 })
 
-Then('the user should see the login error menssage {string}', async function(errorMessage: string) {
+Then('the user should see the login error message {string}', async function(errorMessage: string) {
     await expect(this.page.locator('[data-test="error"]')).toContainText(errorMessage);
 })
 
