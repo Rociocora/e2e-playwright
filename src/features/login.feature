@@ -1,6 +1,6 @@
 Feature: Login Saucedemo
 
- Background:
+  Background:
     Given the user is on saucedemo login page
 
   Scenario: login with valid username and password
@@ -8,8 +8,6 @@ Feature: Login Saucedemo
      And the user fill password with "secret_sauce"
      And the user press login button
      Then the user should see products page
-
-
   
   Scenario Outline: Login with invalid data
     When the user fill username with "<username>"
