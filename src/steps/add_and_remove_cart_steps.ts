@@ -23,3 +23,5 @@ Then('the user click on the Continue Shopping button', async function () {
     await this.page.locator('[data-test="continue-shopping"]').click();
 })
 
+
+
