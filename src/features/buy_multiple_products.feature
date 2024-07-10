@@ -1,6 +1,6 @@
-Feature: Add and remove cart
+Feature: Buy multiple product
 
-Scenario: Add and remove a product from the cart
+Scenario: Buy multiple product
     Given the user is on saucedemo login page
     When the user fill username with "visual_user"
     And the user fill password with "secret_sauce"

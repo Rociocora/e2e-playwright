@@ -70,7 +70,7 @@ jobs:
         run: npm run test:mobile
 
       - name: Generate HTML Report for Mobile
-      if: always()
+        if: always()
         env:
           REPORT_PATH: src/reports/
         run: npm run generate-report
